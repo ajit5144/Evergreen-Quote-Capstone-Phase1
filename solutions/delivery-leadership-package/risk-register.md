@@ -2,11 +2,16 @@
 
 | # | Risk | Owner | Likelihood | Impact | Mitigation | Trigger to escalate |
 |---|---|---|---|---|---|---|
-| R1 | theme.css overrides break Bootstrap utility classes on small screens | Jordan | M | M | Test at 375 / 768 / 1280 after every paste; keep theme.css scoped to brand colors only | Layout still broken at 16:00 Tue → ask instructor (project sponsor) for a scope cut |
-| R2 | Testimonials section can't ship without Legal sign-off on quotes | Priya (Sponsor) | H | L | Swap to placeholder testimonials labeled "Sample" until Legal returns | Legal hasn't responded by Wed 12:00 → ship with placeholders, name it in the demo |
-| R3 | Provided ratePerThousand values produce non-believable numbers ($5,400 for renters) | Jordan + engineering | M | H | Sanity-check three sample inputs after wiring; document the rate decision | Any quote > $500/mo on default slider → flag to sponsor before merge |
-| R4 | CI on `main` goes red after merge and blocks Friday demo | Jordan | L | H | Don't merge unless CI green on the branch; keep a "rollback" line ready | Red main > 30 min → revert, not roll forward |
-| R5 | Solo learner gets stuck on git/PR mechanics and burns a half-day | Jordan | M | M | Pair with K. Singh for the Day 4 PR specifically; pre-stage gh CLI auth Monday | Stuck > 60 min on PR open → ask instructor, don't grind |
+
+R1| Quote form not keeping customer data after they submit the button for Quote Premium in index.html | Ajit | H | H | This is a customer convience. Every time he do not need to fill the details to request a premium | Request Sponser on his view on this and proceed to mitigate this asap|
+
+R2 | Unable to perform validation because of First and Last name field in Index.html |Ajit |M |M | Keep the field as is for now and avoid validating name . Allow Submit button to function without validation | Request Project sponser to Approve this scope change|
+
+R3| Reusing the HTML header instead of recoding it in all pages of the navigation bar| Ajit | H | L | Reusing the code will reduce complexity in the document, Reduce tech debt and increase maintainability of the code | Request project sponser for advide"
+
+R4| Page header and Page Info - Text has to be streamlined | Ajit|L|L| While the content of multiple pages has to be streamlined and approved by business, this can go as is for MVP| Request project sponser for approval|
+
+R5 | Unable to put footer at bottom of screen. It shows up in few pages at middle | Ajit |L |L | As this is a MVP, Leave footer as is. If needed, adjust with future release | Request Sponser to approve this change|
 
 ## How I'll use this register
 
