@@ -29,14 +29,12 @@ jobs:
       - name: Smoke-check required files
         run: |
           test -f html/index.html
-          test -f css/theme.css   
+          test -f css/theme.css
+          test -f js/quote-calc.js
           echo "All required files present."
               
- #        test -f js/quote-calc.js
-          
-
-  #    - name: Lint JS syntax
-  #      run: node --check js/quote-calc.js
+      - name: Lint JS syntax
+        run: node --check js/quote-calc.js
 
       - name: Greetings
         run: echo "Evergreen Quote CI workflow completed successfully by ${{github.actor}}"
