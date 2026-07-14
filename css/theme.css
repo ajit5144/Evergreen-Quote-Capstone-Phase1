@@ -82,3 +82,6 @@ body {
 .required{
     color: red;
 }
+.bold{
+    font-weight: bold;
+}
