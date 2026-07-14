@@ -67,6 +67,11 @@ body {
     flex: 1 1 300px;
 }
 
+/* hide the testimonials until we get legal approval. Comment the below section or update display to content to show later */
+.testimonials{
+    display: none;
+}
+
 
 .site-footer {
     display: flex;

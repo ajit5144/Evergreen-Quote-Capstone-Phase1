@@ -1,7 +1,7 @@
 # Decision Memo — Defer "Compare Plans" link to a Future Round
 
 **Date:** Tue afternoon (after Inject #1)
-**Author:** Jordan Park
+**Author:** Ajit Sahu
 **Decision area:** This week's scope tradeoff
 
 ## Context
@@ -10,18 +10,19 @@ Marketing asked Tuesday at 14:00 if we can add a "Compare Plans" link in the nav
 
 ## Options considered
 
-1. **Add Compare Plans, ship with placeholder testimonials.** Pros: marketing happy, demo looks fuller. Cons: two new things to verify by Thursday; the placeholder testimonials labeled "Sample" set a confusing tone.
-2. **Defer Compare Plans, ship with placeholder testimonials labeled "Sample".** Pros: keeps the delivery goal intact; one moving part instead of two. Cons: marketing has to wait one round.
-3. **Defer both Compare Plans and testimonials.** Pros: minimum scope. Cons: page is visibly thin; demo feels like a warm-up.
+1. **Add Compare Plans, ship without placeholder testimonials.** Pros: marketing happy,Legal happy. Cons: Its difficult to Compare 2 plans within this short period of time and deliver.
+
+2. **Defer Compare Plans, ship removing placeholder testimonials.** Pros: keeps the delivery goal intact; one moving part instead of two. Cons: marketing has to wait one round.
+3. **Add a Navigation Link while suggesting "Work in Progress' for compare plans and Skip testimonials.** Pros: Meet 1 goal. And Partially meet Markketing goals. imum scope. Cons: With multiple page as "Work in Progress" It migt impact customer morality.
 
 ## Recommendation
 
-**Option 2.** Defer Compare Plans to a future round. Ship testimonials with placeholder copy labeled "Sample — pending customer releases" so the page doesn't feel hollow.
+**Option 3.** Skip Testimonials . Add a Navigation link for "Compare Insurance" 
 
 ## Why
 
-The delivery goal is "demo without pre-apologizing." Adding a new nav link in 36 hours adds risk to the one thing we already promised — the assembled, themed, responsive page with a working calculator. Marketing can A/B test in a future round against a more stable baseline.
+While The legal compliance has to be maintained, To keep Marketing happy without missing deadline , Team plan to add just the Nav link for compare plans and then leave the page empty. 
 
 ## What would change my mind
 
-If marketing came back Wed morning with a one-line confirmation that the link target is final and they accept it as a no-op stub (no destination styling), I'd reconsider.
+If Marketing is not happy with the plan, Tech can remove this completely. However, the decision has to be communicated by 11 AM Wednesday

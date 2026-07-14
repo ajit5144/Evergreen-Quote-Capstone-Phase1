@@ -1,18 +1,20 @@
 # Stakeholder Status Update — Evergreen Quote — Tue EOD
 
-**To:** Priya Ramanathan (Project Sponsor)
+**To:** Lisa Cueva(Project Sponsor)
 **From:** Jordan Park (Delivery Lead)
 **Date:** Tue 17:00
 
 ## What shipped today
 
-- Homepage assembled from the five provided partials; theme applied; responsive at 375 / 768 / 1280.
-- Risk register on file (5 rows, see `risk-register.md`).
-- Decision memo on Compare Plans (see `decision-memo.md`) — recommending defer.
+- Evergreen Insurance page with required navigation link. Responive in Mobile,Ipad and Desktop 
+- Risk Register updated with Risk details 
+- "Compare plan" link added to nav and tested
+- Created decision memo for final go-No go with this
+
 
 ## What slipped (and why)
 
-- Testimonials section is on the page but with **placeholder copy labeled "Sample"** pending Legal clearing the three real quotes you sent. Per Legal's 2-week estimate, real copy will land in a future round.
+- N/A for now
 
 ## What's next (tomorrow)
 
@@ -22,5 +24,4 @@
 
 ## What I need from you
 
-- **Confirm by 11:00 Wed:** OK to ship with "Sample" testimonials this week? If not, I'll pull testimonials entirely.
-- **Confirm by 11:00 Wed:** OK to defer Compare Plans to a future round?
+- **Confirm by 11:00 Wed:** OK to go with "Compare plan" just as a Navigation link. When Customer clicks, it will show "Work in Progress"
