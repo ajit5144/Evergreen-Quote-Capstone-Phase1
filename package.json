@@ -1,0 +1,11 @@
+{
+  "name": "Quote premium calculator",
+  "version": "1.0.0",
+  "main": "quote-calc.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
