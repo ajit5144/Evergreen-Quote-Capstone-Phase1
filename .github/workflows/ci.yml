@@ -39,13 +39,15 @@ jobs:
       - name: Greetings
         run: echo "Evergreen Quote CI workflow completed successfully by ${{github.actor}}"
   copy-to-docs:
-    - name: Copy to docs for GitHub Pages
-      runs-on: ubuntu-latest
-      env:
-        branch: ${{ github.ref_name }}
-    - name: git last commit time 
-      run: echo "Last commit time:" TZ=America/Chicago git log -1 --date=format-local:'%Y-%m-%d %H:%M:%S %Z' --format=%cd
+    name: Copy to docs for GitHub Pages
+    runs-on: ubuntu-latest
+    env:
+      branch: ${{ github.ref_name }}
+      
       steps:
+        - name: git last commit time 
+          run: echo "Last commit time:" TZ=America/Chicago git log -1 --date=format-local:'%Y-%m-%d %H:%M:%S %Z' --format=%cd
+
         - name: Check out the code
           uses: actions/checkout@v5
 
