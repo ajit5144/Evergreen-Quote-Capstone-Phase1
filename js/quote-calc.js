@@ -15,8 +15,14 @@ var rateperstate = {
 
 const annualPremiumDiscount = 0.05; // 5% discount for annual premium
 
+const minCoverageAmount = 50000; // Minimum coverage amount
+const maxCoverageAmount = 500000; // Maximum coverage amount
+
 function calculatePremium(coverageType, coverageAmount,state) {
   console.log("Calculating premium for coverage type: " + coverageType + ", coverage amount: " + coverageAmount + ", state: " + state);
+  if (coverageAmount < minCoverageAmount || coverageAmount > maxCoverageAmount) {
+    return 'Invalid Coverage Amount';
+  }
   var rate = ratePerThousand[coverageType] || 1.0;
   var thousands = coverageAmount / 1000;
   var stateRate = rateperstate[state] || 1.0;
