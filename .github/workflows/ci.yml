@@ -60,7 +60,12 @@ jobs:
       - name: fix asset paths for github pages
         run: |
             sed -i 's|../css/theme.css|theme.css|g' docs/index.html
-            sed -i 's|../js/app.js|app.js|g' docs/index.html
+            sed -i 's|../css/theme.css|theme.css|g' docs/about-company.html
+            sed -i 's|../css/theme.css|theme.css|g' docs/contact.html
+            sed -i 's|../css/theme.css|theme.css|g' docs/coverage.html
+            sed -i 's|../css/theme.css|theme.css|g' docs/claims.html
+            sed -i 's|../css/theme.css|theme.css|g' docs/compare-plans.html
+            sed -i 's|../js/quote-calc.js|quote-calc.js|g' docs/index.html
             echo "Asset paths fixed for GitHub Pages."
 
       - name: Commit and push changes
