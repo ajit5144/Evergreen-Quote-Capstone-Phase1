@@ -64,6 +64,24 @@ jobs:
 
       - name: Greetings
         run: echo "Evergreen Quote CI workflow completed successfully by ${{github.actor}}"
+  
+  test:
+    name: Run tests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the code
+        uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 24
+
+      - name: Install dependencies
+        run:  npm install
+
+      - name: Run tests
+        run:  npm test
 
   copy-to-docs:
     name: Copy to docs for GitHub Pages
