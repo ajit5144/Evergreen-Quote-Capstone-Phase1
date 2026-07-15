@@ -46,11 +46,6 @@ jobs:
       branch: ${{ github.ref_name }}
 
     steps:
-      - name: git last commit time 
-        run: |
-            echo "Last commit time:" 
-            TZ=America/Chicago git log -1 --date=format-local:'%Y-%m-%d %H:%M:%S %Z' --format=%cd
-
       - name: Check out the code
         uses: actions/checkout@v5
 
