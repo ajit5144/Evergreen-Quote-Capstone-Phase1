@@ -25,7 +25,7 @@ body {
 .btn-success:hover {
   background-color: var(--evg-green-dark) !important;
   border-color: var(--evg-green-dark) !important;
-}151
+}
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff !important;
