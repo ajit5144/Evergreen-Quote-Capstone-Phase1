@@ -27,3 +27,9 @@ function calculateAnnualPremium(coveragemonthlyPremium) {
   var monthlyPremium =parseInt(coveragemonthlyPremium);
   return Math.round(monthlyPremium * 12 * (1-  annualPremiumDiscount)); 
 }
+
+// Export the functions for use in other modules
+module.exports = {
+  calculatePremium,
+  calculateAnnualPremium,
+};
