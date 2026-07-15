@@ -8,19 +8,15 @@ var ratePerThousand = {
   condo:0.7,
 };
 
-
+// for now all states are marked as 1.0 but this can be updated later to reflect different state rates.
 var rateperstate = {
   WA: 1.0,
-  OR: 1.1,
-  CA: 1.2,
-  ID: 0.9,
-  TX: 1.3,
-  MA: 1.4,
 };
 
 const annualPremiumDiscount = 0.05; // 5% discount for annual premium
 
 function calculatePremium(coverageType, coverageAmount,state) {
+  console.log("Calculating premium for coverage type: " + coverageType + ", coverage amount: " + coverageAmount + ", state: " + state);
   var rate = ratePerThousand[coverageType] || 1.0;
   var thousands = coverageAmount / 1000;
   var stateRate = rateperstate[state] || 1.0;
@@ -29,6 +25,5 @@ function calculatePremium(coverageType, coverageAmount,state) {
 
 function calculateAnnualPremium(coveragemonthlyPremium) {
   var monthlyPremium =parseInt(coveragemonthlyPremium);
-  
   return Math.round(monthlyPremium * 12 * (1-  annualPremiumDiscount)); 
 }

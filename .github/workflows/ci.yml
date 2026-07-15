@@ -11,6 +11,28 @@ on:
     branches: ["main"]
 
 jobs:
+  display-assets:
+    name: Display assets
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show Project files
+        uses: actions/checkout@v5
+      - name: List files in the repo
+        run: |
+          echo "working directory: $(pwd)"
+          echo "GITHUB_WORKSPACE: ${GITHUB_WORKSPACE}"
+          echo "Listing all files in the repository:"
+          ls -laR ${GITHUB_WORKSPACE}
+
+      - name: show all files in the repo
+        run: |
+          echo "Listing all files in the repository:"
+          find ${GITHUB_WORKSPACE} -type f
+          
+      - name: Show project tree
+        run: |
+          tree -L 3 ${GITHUB_WORKSPACE} || true
+
   validate:
     name: Validate site
     runs-on: ubuntu-latest
