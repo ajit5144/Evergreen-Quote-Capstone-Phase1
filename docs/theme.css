@@ -9,7 +9,8 @@
   --evg-ink: #1f2a2e;
   --evg-hero-ink: #e6f0ea;
   --evg-muted: #6a7a72;
-  --evg-legal-ink:black; 
+  --evg-legal-ink:black;
+  --evg-premium-ink: #1376e7;
 }
 
 body {
@@ -76,7 +77,11 @@ body {
   margin-top: 0;
 }
 
-.premium-label { color: var(--evg-muted); }
+.premium-label { 
+  font-size :1 rem; 
+  font-weight: bold;
+  color: var(--evg-muted); 
+}
 .premium-value { color: var(--evg-green); }
 
 
@@ -113,4 +118,9 @@ body {
 .legal-msg{
     font-size: 1rem;
     color:var(--evg-legal-ink);
+}
+
+.premium-display{
+    font-size: 1.3rem;
+    color:var(--evg-premium-ink);
 }
