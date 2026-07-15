@@ -187,6 +187,13 @@
         <div class="premium-label text-muted">Estimated Annual Premium</div>
         <div class="premium-value display-6 fw-bold" id="annual-premium-value">$0</div>
       </div>
+        <div id="premium-disclaimer"  class="legal-message" hidden>  
+          <p>*This is a preliminary premium estimate, not a bindable quote. Final premium may differ based on policy details and underwriting results</p>
+        </div>
+        <div id="annual-premium-disclaimer" class="legal-message" hidden>  
+          <p>*The annual premium reflects a discount if paid in full at the start of the policy term</p>
+        </div>
+
     </div>
   </div>
 </section>
@@ -247,6 +254,8 @@
     document.getElementById("annual-premium-value").textContent = "$" + annualPremium;
     document.getElementById("premium-box").hidden = false;
     document.getElementById("annual-premium-box").hidden = false;
+    document.getElementById("premium-disclaimer").hidden = false;
+    document.getElementById("annual-premium-disclaimer").hidden = false;
   });
 
   // Keep the slider value label in sync.
