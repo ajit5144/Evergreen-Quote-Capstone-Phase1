@@ -116,6 +116,7 @@ jobs:
             sed -i 's|../css/theme.css|theme.css|g' docs/claims.html
             sed -i 's|../css/theme.css|theme.css|g' docs/compare-plans.html
             sed -i 's|../js/quote-calc.js|quote-calc.js|g' docs/index.html
+            sed -i 's|../js/quote-calc.js|quote-calc.js|g' docs/compare-plans.html
             echo "Asset paths fixed for GitHub Pages."
 
       - name: Commit and push changes
