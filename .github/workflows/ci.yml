@@ -50,10 +50,13 @@ jobs:
 
       - name: Smoke-check required files
         run: |
-          test -f html/index.html
-          test -f css/theme.css
-          test -f js/quote-calc.js
-          test -f assets/rates/renters.json
+          for file in html/index.html css/theme.css js/quote-calc.js assets/rates/renters.json; do
+            if [ ! -f "$file" ]; then
+              echo "Missing required file:"
+              echo "$file"
+              exit 1
+            fi
+          done
           echo "All required files present."
               
       - name: Lint JS syntax
