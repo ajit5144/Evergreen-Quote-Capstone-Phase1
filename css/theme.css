@@ -77,7 +77,11 @@ body {
   margin-top: 0;
 }
 
-.premium-label { color: var(--evg-muted); }
+.premium-label { 
+  font-size :1 rem; 
+  font-weight: bold;
+  color: var(--evg-muted); 
+}
 .premium-value { color: var(--evg-green); }
 
 
@@ -117,6 +121,6 @@ body {
 }
 
 .premium-display{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color:var(--evg-premium-ink);
 }
