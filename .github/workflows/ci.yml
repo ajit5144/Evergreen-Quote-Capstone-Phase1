@@ -47,7 +47,9 @@ jobs:
 
     steps:
       - name: git last commit time 
-        run: echo "Last commit time:" TZ=America/Chicago git log -1 --date=format-local:'%Y-%m-%d %H:%M:%S %Z' --format=%cd
+        run: |
+            echo "Last commit time:" 
+            TZ=America/Chicago git log -1 --date=format-local:'%Y-%m-%d %H:%M:%S %Z' --format=%cd
 
       - name: Check out the code
         uses: actions/checkout@v5
@@ -59,6 +61,13 @@ jobs:
             cp -r css/* docs/
             cp -r js/* docs/
             echo "Files copied to docs folder."
+
+      - name: fix asset paths for github pages
+        run: |
+            sed -i 's|../css/|css/|g' docs/index.html
+            sed -i 's|../js/|js/|g' docs/index.html
+            echo "Asset paths fixed for GitHub Pages."
+
       - name: Commit and push changes
         run: |
             git config --global user.name "GitHub Actions[bot]"
