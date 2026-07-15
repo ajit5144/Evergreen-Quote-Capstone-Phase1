@@ -95,12 +95,17 @@ jobs:
 
       - name: Copy files to docs folder
         run: |
-            rm -rf docs
             mkdir -p docs
+            find docs -mindepth 1 -delete
+            echo "Cleared existing files in docs folder."
+            ls -la docs
+      - name: Copy files to docs folder
+        run: |
             cp -r html/* docs/
             cp -r css/* docs/
             cp -r js/* docs/
             echo "Files copied to docs folder."
+            ls -la docs
 
       - name: fix asset paths for github pages
         run: |
