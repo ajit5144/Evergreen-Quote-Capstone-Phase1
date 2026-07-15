@@ -5,7 +5,11 @@
 
 R1| Quote form not keeping customer data after they submit the button for Quote Premium in index.html | Ajit | H | H | This is a customer convience. Every time he do not need to fill the details to request a premium | Request Sponser on his view on this and proceed to mitigate this asap|
 
+07-15-2026 : This is working fine after JS integration. Risk is remidiated.
+
 R2 | Unable to perform validation because of First and Last name field in Index.html |Ajit |M |M | Keep the field as is for now and avoid validating name . Allow Submit button to function without validation | Request Project sponser to Approve this scope change|
+
+07-15-2026: Instead of 2 (first and last name), system is validating only first name and expecting a value now. The risk is reduced to Low now. 
 
 R3| Reusing the HTML header instead of recoding it in all pages of the navigation bar| Ajit | H | L | Reusing the code will reduce complexity in the document, Reduce tech debt and increase maintainability of the code | Request project sponser for advide"
 

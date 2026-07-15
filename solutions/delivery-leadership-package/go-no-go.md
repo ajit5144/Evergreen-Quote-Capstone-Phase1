@@ -11,6 +11,7 @@
     - HTML validation (advisory)
     - required-files smoke check, `node --check` on `js/quote-calc.js`. 
         Note: it does **not** check that the calculator returns believable numbers — that's a human check.
+    - Automated test cases to validate premiums during Push or merge 
 
 ## What "GO" would mean
 
@@ -25,4 +26,10 @@
 
 ## My call
 
-**Go with conditions.** CI is green and the human spot-check on the three rate values produced believable numbers. The Project should be a GO with 
+**Go with conditions.** 
+- CI is green
+- Automated test case for premium check added to CI and working as expected
+- Legal sign off received for Testimonials
+- Few of the pages ( contacts, Compare plans, Claims) mention as Work in progress.This can be fixed in later releases 
+
+ The Project should be a GO.
