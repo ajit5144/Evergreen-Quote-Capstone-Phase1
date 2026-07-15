@@ -1,7 +1,7 @@
 const {
   calculatePremium,
   calculateAnnualPremium,
-} = require('./premium');
+} = require('./quote-calc');
 
 describe('calculatePremium', () => {
   test('calculates Auto premium for WA at minimum boundary', () => {
