@@ -16,6 +16,7 @@ R3| Reusing the HTML header instead of recoding it in all pages of the navigatio
 R4| Page header and Page Info - Text has to be streamlined | Ajit|L|L| While the content of multiple pages has to be streamlined and approved by business, this can go as is for MVP| Request project sponser for approval|
 
 R5 | Unable to put footer at bottom of screen. It shows up in few pages at middle | Ajit |L |L | As this is a MVP, Leave footer as is. If needed, adjust with future release | Request Sponser to approve this change|
+07/16 - This was fixed
 
 ## How I'll use this register
 
