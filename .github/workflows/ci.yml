@@ -132,13 +132,5 @@ jobs:
             git pull --rebase origin $branch || true
             git push origin $branch
 
-## commenting the below code to see if it works for pushing changes to the branch            
-#            if ! git diff --cached --quiet; then
-#              git commit -m "Update docs folder from $branch"
-#              git pull --rebase origin $branch || true
-#              git push origin $branch
-#            else
-#              echo "No changes to commit."
-#            fi
 
             
